@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 from blog.models import Post
 
 
-# Create your views here.
+# HTML Pages.
 def home(request): 
     return render(request, 'home/home.html')
     # return HttpResponse('This is home ')
@@ -108,8 +108,7 @@ def handleLogin(request):
 
     return HttpResponse('404 - Not Found')
 
-
-
+# Authenticate APIS
 def handleLogout(request):
         logout(request)
         messages.success(request, "successfully Logged Out")

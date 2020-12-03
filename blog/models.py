@@ -11,3 +11,13 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title + ' by ' + self.author
+
+
+
+# sno
+# comment
+# user 
+# blog 
+# post
+# parent
+# timestamp
