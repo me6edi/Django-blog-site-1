@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, HttpResponse, redirect
 from blog.models import Post
 
 # Create your views here.
@@ -16,4 +16,7 @@ def blogPost(request, slug):
     return render(request, 'blog/blogPost.html', context)
     # return HttpResponse(f'This is blogPost : {slug}')
 
- 
+def postComment(request, slug):
+    if request.method=="POST":
+        pass
+    return redirect("/")
