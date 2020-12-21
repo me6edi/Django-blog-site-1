@@ -51,6 +51,12 @@
                     </form>
                 </div>
             </div>
+                      <div class="replies bg-danger my-3">
+              <br>
+              <br>
+              <br>
+              <br>
+          </div>
         </div>
       </div>
     </div>
@@ -77,6 +83,12 @@
                   </form>
               </div>
           </div>
+          <div class="replies bg-danger my-2 ">
+            {% for reply in replyDict|get_val:comment.sno %}
+            {{reply}}
+            <br> 
+            {% endfor %}
+            </div>
       </div>
     </div>
   </div>
